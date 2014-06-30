@@ -1,5 +1,5 @@
 /*
- * jQuery UI Vertical Tabs 0.1.0
+ * jQuery UI Vertical Tabs 0.1.1
  * https://github.com/tjvantoll/jquery-ui-vertical-tabs
  *
  * Copyright TJ VanToll
