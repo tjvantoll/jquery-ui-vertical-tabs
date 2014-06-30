@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Demo of the jQuery UI vertical tabs extension</title>
+
+	<link rel="stylesheet" href="../bower_components/jquery-ui/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../vertical-tabs.css">
+</head>
+<body>
+
+<div id="tabs">
+	<ul>
+		<li><a href="#one">One</a></li>
+		<li><a href="#two">Two</a></li>
+		<li><a href="#three">Three</a></li>
+	</ul>
+	<div id="one">One Contents</div>
+	<div id="two">Two Contents</div>
+	<div id="three">Three Contents</div>
+</div>
+
+<script src="../bower_components/requirejs/require.js"></script>
+<script>
+	require.config({
+		paths: {
+			"jquery": "../bower_components/jquery/dist/jquery",
+			"jquery-ui": "../bower_components/jquery-ui/ui"
+		}
+	});
+	require([ "../vertical-tabs.js" ], function( tabs, button ) {
+		tabs({ orientation: "vertical" }, "#tabs" );
+	});
+</script>
+
+</body>
+</html>

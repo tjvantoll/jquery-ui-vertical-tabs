@@ -29,15 +29,12 @@
 	<input type="radio" name="orientation" id="vertical" checked>
 </div>
 
-<script src="../bower_components/requirejs/require.js"></script>
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="../vertical-tabs.js"></script>
 <script>
-	require.config({
-		paths: {
-			"jquery": "../bower_components/jquery/dist/jquery",
-			"jquery-ui": "../bower_components/jquery-ui/ui"
-		}
-	});
-	require([ "../vertical-tabs.js", "jquery-ui/button" ], function( verticalTabs, button ) {
+	(function() {
+		"use strict";
 
 		var tabs = $( "#tabs" ).tabs({ orientation: "vertical" });
 
@@ -48,7 +45,7 @@
 			.on( "change", "input", function() {
 				tabs.tabs( "option", "orientation", this.id );
 			});
-	});
+	}());
 </script>
 
 </body>
