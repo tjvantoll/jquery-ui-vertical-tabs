@@ -1,0 +1,33 @@
+{
+  "name": "jquery-ui-vertical-tabs",
+  "version": "0.1.0",
+  "homepage": "https://github.com/tjvantoll/jquery-ui-vertical-tabs",
+  "authors": [
+    "TJ VanToll <tj.vantoll@gmail.com>"
+  ],
+  "description": "An extension of the jQuery UI tabs widget that adds the ability to display tabs vertically",
+  "main": "vertical-tabs.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "jQuery",
+    "jQuery UI"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": ">=1.9",
+    "jquery-ui": ">=1.10"
+  },
+  "devDependencies": {
+    "jquery": "2.1.1",
+    "jquery-ui": "1.11.0",
+    "requirejs": "2.1.14"
+  }
+}
